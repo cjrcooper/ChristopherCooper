@@ -1,0 +1,140 @@
+<head>
+
+<link rel="stylesheet" type="text/css" href="main.css"/>
+
+</head>
+
+
+
+<html>
+
+<body>
+	<header>
+	
+		<div class="logo hidden"><img src="img/Logo-white.png"></div>
+	
+		<ul class="nav hidden">
+			<li><a href="#welcome">Welcome</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+			<li><a href="#faq">FAQ</a></li>
+		</ul>
+	</header>
+	
+	
+	<div id="welcome">
+		<div class="welcome-banner hidden">
+			<h1>CHRISTOPHER COOPER</h1>
+			<h3 id="slogan">Aspiring Full-Stack Web Developer</h3>
+		</div>
+	</div>
+	
+	
+	<div id="about">
+		<div class="portrait">
+			<p>
+				<img class="portrait-image" src="img/bio-pic.png"/>
+			</p>	
+		</div>
+			<div class="bio">
+					<h1>Hello! My Name is Christopher Cooper</h1>
+					<p>Although most people just call me Coop. I am a 26 year old Sydney sider who has a passion for Web Development.</p>
+					<p>I studied Business and Commerce at the University of Western Sydney and upon the final year of my degree I began taking a number of electives in Web Application Design. It is here that I began to develop my interest in Web Design & Wev Development.</p>
+					<p>I also have many other hobbies and passions. My favourite sports are basketball and boxing, I love playing Guitar and listening to German Rap (Even though I don't know what they are saying most of the time), I take Spanish lessons every week and I love playing Starcraft</p>
+		</div>
+	</div>
+	
+
+	
+	<div id="contact">
+		<div class="contact-left">			
+			<div class="contact-info-container">
+				<h1 class="contact-header">CONTACT ME</h1>
+				<p>Christopher Cooper<p>
+				<p>17 Kinnard Way<p>
+				<p>Kellyville<p>
+				<p>NSW, 2055<p>
+				<p>0422 902 962</p>
+				<p>cjrcooper@gmail.com<p>
+			</div>	
+		</div>
+		
+		<div class="contact-right">
+			<div class="social-nav">
+					
+				<a href="https://www.facebook.com/christopher.cooper.7330" target="_blank"><img class="social-icon" src="icons/azmind-35-rounded-social-icons/PNG/facebook-gray.png" onmouseover="this.src='icons/azmind-35-rounded-social-icons/PNG/facebook.png'" onmouseout="this.src='icons/azmind-35-rounded-social-icons/PNG/facebook-gray.png'" /></a>
+					
+				<a href="https://plus.google.com/103267647367064873664" target="_blank"><img class="social-icon" src="icons/azmind-35-rounded-social-icons/PNG/googleplus-gray.png" onmouseover="this.src='icons/azmind-35-rounded-social-icons/PNG/googleplus.png'" onmouseout="this.src='icons/azmind-35-rounded-social-icons/PNG/googleplus-gray.png'" /></a>
+					
+				<a href="https://twitter.com/Ccooppyy" target="_blank"><img class="social-icon" src="icons/azmind-35-rounded-social-icons/PNG/twitter-gray.png" onmouseover="this.src='icons/azmind-35-rounded-social-icons/PNG/twitter.png'" onmouseout="this.src='icons/azmind-35-rounded-social-icons/PNG/twitter-gray.png'" /></a>
+					
+				<a href="https://au.linkedin.com/in/christopher-cooper-a8511165" target="_blank"><img class="social-icon" src="icons/azmind-35-rounded-social-icons/PNG/linkedin-gray.png" onmouseover="this.src='icons/azmind-35-rounded-social-icons/PNG/linkedin.png'" onmouseout="this.src='icons/azmind-35-rounded-social-icons/PNG/linkedin-gray.png'" /></a>
+		</div>
+	</div>	
+	</div>
+	
+	
+	<div id="faq">
+		<h1 class="faq-header">FAQ</h1>
+		<div class="faq-left">
+			<div class="faq-left-container">
+			<h2 class="q">Q) I heard you are also an avid gamer?</h2>
+			<p>A) You heard correctly! My favourite game is Starcraft but I also enjoy League of Legends, Assassin's Creed and Left 4 Dead</p>
+
+			<h2 class="q">Q) Who is your favourite German Rapper?</h2>
+			<p id="german">A) CRO!! Ich liebe Cro, er ist der beste</p>
+			<p id="germlish">A) CRO!! I love Cro, he is the best</p>
+
+
+			<h2 class="q">Q) Which baskteball team do you follow?</h2>
+			<p>A) The Houston Rockets, my boy James Harden represent!</p>
+		</div>
+		</div>
+		
+		<div class="faq-right">
+			<div class="faq-right-container">
+			<h2 class="q">Q) How many countries have you been to?</h2>
+			<p>A) Geez...quite a lot, I think i'm up to 22. By far my favourite two countries are Austria and Germany, beautiful places!</p>
+
+			<h2 class="q">Q) Q) How long have you been learning Spanish?</h2>
+			<p id="spanish">A) Ummm sobre dos a&ntilde;os! Puedo leer y escribir en Espa&ntilde;ol bastante bien, pero mi hablar y escucha son bastante malo </p>
+			<p id="spanglish">A) Ummm! I can read and write in Spanish pretty well, but my speaking and listening is pretty bad</p>
+
+			<h2 class="q">Q) Are you excited for GA?</h2>
+			<p>A) Yep!</p>
+		</div>
+	</div>
+	</div>
+		
+</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.welcome-banner.hidden').fadeIn(1000).removeClass('hidden');
+		$('.logo.hidden').fadeIn(3000).removeClass('hidden');
+		$('.nav.hidden').fadeIn(3000).removeClass('hidden');
+	});
+	
+	$(document).ready(function(){
+      $('#german, #germlish').click(function(){
+			$('#germlish').toggle();
+			$('#german').toggle();
+        });
+    });
+	
+	$(document).ready(function(){
+      $('#spanish, #spanglish').click(function(){
+			$('#spanglish').toggle();
+			$('#spanish').toggle();
+        });
+    });
+	
+</script>
+
+
+
+
+

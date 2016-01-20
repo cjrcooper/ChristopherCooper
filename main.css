@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'chalk-drawing';
+    src: url(fonts/KGTenThousandReasons.ttf) format("truetype");
+}
+
+body {
+    margin: 0 auto;
+    font-family: chalk-drawing;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+header ul {
+    width: 180px;
+    height: 40px;
+    display: inline-block;
+    float: right;
+}
+
+header ul li {
+    display: inline;
+    width: 25%;
+    height: 40px;
+    padding-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 16pt;
+    font-family: chalk-drawing;
+    color: #fff;
+    opacity: 1;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    padding: 0;
+}
+
+.logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+#welcome {
+    height: 100vh;
+    background-image: url(Img/photo-1444927714506-8492d94b4e3d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background-color: #ececec;
+}
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background-color: #275674;
+}
+
+#faq {
+    height: 100vh;
+    width: 100%;
+    display: table-cell;
+    font-family: "chalk-drawing";
+	background-color: #ececec;
+}
+
+.welcome-banner {
+    width: 100%;
+    position: absolute;
+    top: 35vh;
+}
+
+.welcome-banner h1 {
+    font-size: 36pt;
+    opacity: .8;
+    line-height: 85px;
+    text-align: center;
+    color: rgba(0,0,0,0.95);
+    font-family: Chalk-drawing;
+    text-shadow: -2px 0 white,0 1px black,1px 0 black,0 -1px #000;
+}
+
+.welcome-banner h3 {
+    font-size: 18pt;
+    opacity: .9;
+    text-align: center;
+    color: #fff;
+    font-family: chalk-drawing;
+    text-shadow: -2px 0 black,0 1px black,1px 0 black,0 -1px #000;
+}
+
+.slogan {
+    position: relative;
+    width: 300px;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slogan > h3 {
+    opacity: 1;
+    text-align: left;
+    color: #694949;
+    font-family: chalk-drawing;
+}
+
+.portrait {
+    width: 100%;
+    text-align: center;
+}
+
+.portrait-image {
+    border-radius: 50%;
+    width: 40vh;
+    height: 40vh;
+    border: 10px solid #000;
+    margin-top: 4vh;
+}
+
+.bio {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.bio p {
+    width: 50%;
+    font-size: 14pt;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.bio h1 {
+    margin-left: 25%;
+    font-size: 20pt;
+    width: 50%;
+}
+
+.contact-left {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-right {
+    width: 100%;
+    text-align: center;
+}
+
+.faq-left {
+    width: 50%;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 3em;
+}
+
+.faq-right {
+    width: 50%;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 3em;
+}
+
+.faq-left-container {
+    float: right;
+    width: 50%;
+    margin-right: 25px;
+}
+
+.faq-right-container {
+    float: left;
+    width: 50%;
+    margin-left: 25px;
+}
+
+.faq-header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.q {
+    color: #00334F;
+}
+
+#germlish {
+    display: none;
+    color: red;
+}
+
+#spanglish {
+    display: none;
+    color: red;
+}
+
+.contact-info-container {
+    margin-left: 25%;
+    line-height: 2vw;
+    color: #fff;
+    font-family: chalk-drawing;
+    text-align: left;
+    margin-top: 90px;
+    padding-bottom: 100px;
+}
+
+.contact-header {
+    font-size: 30pt;
+    line-height: 2;
+}
+
+.social-nav {
+    display: inline;
+    width: 100%;
+}
+
+.social-icon {
+    padding-right: 0;
+}
+
+@media (min-width: 992px) {
+.portrait {
+    width: 50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.portrait-image {
+    border-radius: 50%;
+    width: 40vh;
+    height: 40vh;
+    border: 10px solid #000;
+}
+
+.bio {
+    width: 50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 2em;
+    padding-bottom: 0;
+}
+
+.bio p {
+    width: 75%;
+    font-size: 14pt;
+    text-align: left;
+    margin-left: 0;
+}
+
+.bio h1 {
+    margin-left: 0;
+    font-size: 20pt;
+}
+
+.contact-left {
+    width: 50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.contact-right {
+    width: 50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 2em;
+    padding-bottom: 0;
+}
+
+.social-icon {
+    padding-right: 50px;
+}
+}
